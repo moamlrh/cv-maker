@@ -1,0 +1,104 @@
+.personal {
+  width: 80%;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.137);
+  margin: 10px auto 50px auto;
+  border-radius: 10px;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    h3 {
+      font-size: 19px;
+      color: rgba(88, 88, 88, 0.911);
+    }
+    span {
+      margin-right: 10px;
+    }
+  }
+  .informations {
+    padding: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.301);
+    .image-name {
+      display: flex;
+      align-items: center;
+      &> div:last-child{
+        margin-left: -10px;
+        *{
+          padding-left: 15px;
+          margin-right: 8px;
+        }
+      }
+      .image-upload {
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.33);
+        margin-right: 15px;
+        overflow: hidden;
+        height: 160px;
+        width: 180px;
+        position: relative;
+        &:hover {
+          .upload-text {
+            bottom: 0px;
+          }
+        }
+        .upload-text {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.2s;
+          height: 40px;
+          background-color: rgba(47, 243, 29, 0.422);
+          position: absolute;
+          bottom: -50px;
+          &:hover {
+            background-color: rgba(47, 243, 29, 0.61);
+            * {
+              color: white;
+            }
+          }
+          * {
+            font-size: 40px;
+            color: rgba(255, 255, 255, 0.522);
+          }
+        }
+        input {
+          display: none;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          margin-right: 15px;
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .btn {
+          margin: 20px 0px;
+        }
+      }
+    }
+    .other-info {
+      & > div:first-child {
+        margin: 15px 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+      }
+      .address {
+        width: 100% !important;
+        margin-left: 5px;
+      }
+      & > div:last-child {
+        margin: 15px 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+      }
+    }
+  }
+}

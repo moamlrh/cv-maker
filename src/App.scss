@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.app {
+  overflow: hidden;
+  position: relative;
+  min-width: 680px;
+  .bg-green {
+    position: absolute;
+    top: -320px;
+    z-index: 0;
+    background-color: #2dc46a !important;
+    width: 150%;
+    left: -20px;
+    height: 570px;
+    rotate: -3deg;
+  }
+}

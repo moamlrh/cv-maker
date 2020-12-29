@@ -1,0 +1,39 @@
+.stepper-title {
+  color: white !important;
+  width: 550px;
+  margin: 0px auto 30px auto;
+}
+
+.stepper-body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .cont-btns {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        padding: 10px 30px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: white;
+        background-color: #626ccc;
+        display: flex !important;
+        .icon {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
