@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Interests from "./Comps/ResumeObjective";
 import ResumeObjective from "./Comps/Interests";
 import "./Experiences.scss";
